@@ -16,8 +16,9 @@ $sql = 'SELECT title,ingredients, id FROM pizzas';
 $result = mysqli_query($conn, $sql);
 
 //fetch the resukting rows as an array
+$pizzas = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-
+print_r($pizzas);
 
 
 
