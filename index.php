@@ -7,6 +7,18 @@ if (!$conn){
   echo'Connection error '.mysqli_connect_error();
 
 }
+//write query for al pizzas
+
+$sql = 'SELECT title,ingredients, id FROM pizzas';
+
+//make query and get results
+
+$result = mysqli_query($conn, $sql);
+
+//fetch the resukting rows as an array
+
+
+
 
 
 ?>
