@@ -28,8 +28,6 @@ mysqli_close($conn);
 //----------optional/good practice
 
 
-print_r($pizzas);
-
 
 
 ?>
@@ -53,7 +51,7 @@ print_r($pizzas);
            <div> <?php echo htmlspecialchars($pizza['ingredients']);?></div>
         </div>
         <div class="card-acion right-allign">
-        <a href="#" class="brand-text">more info</a>
+          <a href="#" class="brand-text">more info</a>
          </div>
       </div>
     </div>
