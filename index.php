@@ -51,9 +51,9 @@ mysqli_close($conn);
 							<h6><?php echo htmlspecialchars($pizza['title']); ?></h6>
 							<div>
                   <ul>
-                    <?php foreach(explode(',', $pizza['ingredients']) as $ing){ ?>
+                    <?php foreach(explode(',', $pizza['ingredients']) as $ing): ?>
                       <li>  <?php echo htmlspecialchars($ing);?>        </li>
-                    <?php   }   ?>
+                    <?php   endforeach   ?>
 
                   </ul>
               </div>
