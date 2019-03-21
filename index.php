@@ -28,7 +28,7 @@ mysqli_close($conn);
 //----------optional/good practice
 
 
-
+print_r(explode(',', $pizzas[0]['ingredients']));
 
 ?>
 
